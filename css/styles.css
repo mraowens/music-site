@@ -1,0 +1,333 @@
+/* 
+    Student Name: Antawyone Owens
+    File Name: styles.css
+    Date: 04/16/2026
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, div, img, ul, li, section, article, aside, figure, figcaption, audio, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Mobile style rules */
+.tab-desk,
+#hero,
+#menu-links {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+header {
+    text-align: center;
+    color: #373684;
+    padding: 2%;
+    font-family: "DM Serif Display", serif;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
+}
+
+nav {
+    background-color: #373684;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
+main {
+    padding: 2%;
+    font-size: 1.15em;
+    overflow: auto;
+}
+
+main p {
+    padding: 2%;
+}
+
+main h2,
+main h3,
+main h4 {
+    padding: 2%;
+    font-family: "DM Serif Display", serif;
+}
+
+.action {
+    font-weight: bold;
+    color: #373684;
+}
+
+#intro,
+#contact,
+#rental {
+    text-align: center;
+}
+
+#info {
+    margin-bottom: 2%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#piano,
+#guitar,
+#violin {
+    margin: 2% 0;
+    padding: 2%;
+    background-color: #fff;
+    border: 1px solid #e1d9d2;
+    border-radius: 8px;
+}
+
+audio {
+    display: block;
+    margin: 1em 2%;
+    width: 96%;
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.email-link {
+    color: #373684;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.map {
+    border: 4px solid #373684;
+    width: 95%;
+    height: 300px;
+    margin: 2% auto;
+    display: block;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 2%;
+    color: #373684;
+}
+
+figure {
+    margin: 2%;
+}
+
+figcaption {
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #373684;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+.social img {
+    display: inline-block;
+    padding: 4%;
+}
+
+/* Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+    .mobile,
+    .mobile-nav {
+        display: none;
+    }
+
+    .tab-desk {
+        display: block;
+    }
+
+    span.tab-desk {
+        display: inline;
+    }
+
+    #hero {
+        display: block;
+    }
+
+    #hero img {
+        width: 100%;
+    }
+
+    /* Tablet Viewport: Style rule for header content */
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+
+    /* Tablet Nav Area Style Rules */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+        border-right: 1px solid #f6eee4;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #f6eee4;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    .map {
+        width: 500px;
+        height: 350px;
+    }
+    /* Tablet Viewport: Style rules for footer area */
+    .copyright {
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+    }
+
+}
+
+/* Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5d5c0;
+        transform: scale(1.2);
+    }
+
+    #info {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 2% auto;
+    }
+
+    #piano,
+    #guitar,
+    #violin {
+        float: left;
+        width: 31%;
+        margin: 1%;
+        min-height: 760px;
+    }
+
+    #piano img,
+    #guitar img,
+    #violin img {
+        margin: 0 auto;
+    }
+
+    main::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav,
+    .mobile,
+    .mobile-nav {
+        display: none;
+    }
+
+    main {
+        font-size: 1em;
+    }
+}
